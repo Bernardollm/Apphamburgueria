@@ -1,0 +1,15 @@
+package hamburgueria.notificacao;
+
+public class PainelCozinha implements Notificacao {
+
+    private String ultimaMensagem;
+
+    @Override
+    public void atualizar(String mensagem) {
+        this.ultimaMensagem = mensagem;
+    }
+
+    public String getUltimaMensagem() {
+        return ultimaMensagem;
+    }
+}
